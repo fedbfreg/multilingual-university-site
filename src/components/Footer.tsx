@@ -13,10 +13,12 @@ const QUICK_LINK_KEYS = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: '微信公众号', icon: '💬', href: '#' },
-  { label: '官方微博', icon: '📢', href: '#' },
-  { label: 'B站官方号', icon: '🎬', href: '#' },
-  { label: '知乎机构号', icon: '📝', href: '#' },
+  { key: 'social.discord', icon: '💬', href: 'https://discord.gg/cmsc' },
+  { key: 'social.telegram', icon: '✈️', href: 'https://t.me/cmsc_official' },
+  { key: 'social.twitter', icon: '🐦', href: 'https://twitter.com/cmsc_official' },
+  { key: 'social.instagram', icon: '📷', href: 'https://instagram.com/cmsc_official' },
+  { key: 'social.facebook', icon: '👥', href: 'https://facebook.com/cmsc.official' },
+  { key: 'social.youtube', icon: '▶️', href: 'https://youtube.com/@cmsc_official' },
 ];
 
 export default function Footer() {
@@ -90,7 +92,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {SOCIAL_LINKS.map((social) => (
-                <li key={social.label}>
+                <li key={social.key}>
                   <a
                     href={social.href}
                     className="text-sm text-background/60 hover:text-background/90 transition-colors duration-200 inline-flex items-center gap-2"
@@ -98,7 +100,7 @@ export default function Footer() {
                     rel="noreferrer"
                   >
                     <span className="text-base">{social.icon}</span>
-                    {social.label}
+                    {t(social.key)}
                   </a>
                 </li>
               ))}

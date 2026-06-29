@@ -342,6 +342,12 @@ export const translations = {
     'footer.allRightsReserved': '保留所有权利',
     'footer.psb': '教育部批准文号：№12345',
     'footer.followUs': '关注我们',
+    'social.discord': 'Discord 社区',
+    'social.telegram': 'Telegram 频道',
+    'social.twitter': 'Twitter / X',
+    'social.instagram': 'Instagram',
+    'social.facebook': 'Facebook 主页',
+    'social.youtube': 'YouTube 频道',
     'footer.icp': '卫生部许可证：№67890',
 
     // ── 404 ──
@@ -672,6 +678,12 @@ export const translations = {
     'footer.allRightsReserved': 'Бардык укуктар корголгон',
     'footer.psb': '教育部批准文号：№12345',
     'footer.followUs': 'Бизди ээрчиңиз',
+    'social.discord': 'Discord коомдук',
+    'social.telegram': 'Telegram каналы',
+    'social.twitter': 'Twitter / X',
+    'social.instagram': 'Instagram',
+    'social.facebook': 'Facebook баракчасы',
+    'social.youtube': 'YouTube каналы',
     'footer.icp': '卫生部许可证：№67890',
 
     // ── 404 ──
@@ -1002,6 +1014,12 @@ export const translations = {
     'footer.allRightsReserved': 'Все права защищены',
     'footer.psb': '教育部批准文号：№12345',
     'footer.followUs': 'Мы в соцсетях',
+    'social.discord': 'Discord сообщество',
+    'social.telegram': 'Telegram канал',
+    'social.twitter': 'Twitter / X',
+    'social.instagram': 'Instagram',
+    'social.facebook': 'Facebook страница',
+    'social.youtube': 'YouTube канал',
     'footer.icp': '卫生部许可证：№67890',
 
     // ── 404 ──
@@ -1332,6 +1350,12 @@ export const translations = {
     'footer.allRightsReserved': 'All rights reserved',
     'footer.psb': '教育部批准文号：№12345',
     'footer.followUs': 'Follow Us',
+    'social.discord': 'Discord Community',
+    'social.telegram': 'Telegram Channel',
+    'social.twitter': 'Twitter / X',
+    'social.instagram': 'Instagram',
+    'social.facebook': 'Facebook Page',
+    'social.youtube': 'YouTube Channel',
     'footer.icp': '卫生部许可证：№67890',
 
     // ── 404 ──
