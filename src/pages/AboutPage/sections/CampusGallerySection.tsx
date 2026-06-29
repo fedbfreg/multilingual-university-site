@@ -4,7 +4,7 @@ import { Image } from '@/components/ui/image';
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
-import { MOCK_GALLERY, type IGalleryImage } from '@/data/about';
+import { useGallery, type IGalleryImage } from '@/data/about';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const CATEGORY_KEYS = [
@@ -23,13 +23,14 @@ type CategoryKey = (typeof CATEGORY_KEYS)[number]['key'];
 
 export default function CampusGallerySection() {
   const { t } = useTranslation();
+  const gallery = useGallery();
   const [activeCategory, setActiveCategory] = useState<CategoryKey>('all');
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   const filtered = useMemo(() => {
-    if (activeCategory === 'all') return MOCK_GALLERY;
-    return MOCK_GALLERY.filter((img) => img.category === activeCategory);
-  }, [activeCategory]);
+    if (activeCategory === 'all') return gallery;
+    return gallery.filter((img) => img.category === activeCategory);
+  }, [activeCategory, gallery]);
 
   const openLightbox = (index: number) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);

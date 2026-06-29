@@ -3,15 +3,17 @@ import { motion } from 'framer-motion';
 import { Image } from '@/components/ui/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { MOCK_LEADERS, type ILeader } from '@/data/about';
+import { useLeaders, type ILeader } from '@/data/about';
 import { useTranslation } from '@/i18n/I18nContext';
 
 interface LeadersSectionProps {
   leaders?: ILeader[];
 }
 
-export default memo(function LeadersSection({ leaders = MOCK_LEADERS }: LeadersSectionProps) {
+export default memo(function LeadersSection({ leaders }: LeadersSectionProps) {
   const { t } = useTranslation();
+  const defaultLeaders = useLeaders();
+  const displayLeaders = leaders ?? defaultLeaders;
 
   return (
     <section className="w-full py-16 md:py-20">
@@ -32,7 +34,7 @@ export default memo(function LeadersSection({ leaders = MOCK_LEADERS }: LeadersS
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {leaders.map((leader, i) => (
+          {displayLeaders.map((leader, i) => (
             <motion.div
               key={leader.id}
               initial={{ opacity: 0, y: 24 }}

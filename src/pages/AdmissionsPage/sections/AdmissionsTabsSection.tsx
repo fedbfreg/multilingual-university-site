@@ -114,7 +114,7 @@ export default function AdmissionsTabsSection() {
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0">
                           <CardTitle className="text-lg">{program.name}</CardTitle>
-                          <CardDescription className="mt-1">{program.objectives}</CardDescription>
+                          <CardDescription className="mt-1">{program.description}</CardDescription>
                         </div>
                         <Badge variant="secondary" className="shrink-0">{program.degree}</Badge>
                       </div>
@@ -122,21 +122,20 @@ export default function AdmissionsTabsSection() {
                     <CardContent className="space-y-4">
                       <div className="flex items-center gap-4 text-sm text-muted-foreground">
                         <span className="flex items-center gap-1"><Clock className="size-3.5" />{program.duration}</span>
+                        <span className="flex items-center gap-1"><Users className="size-3.5" />{program.language}</span>
                       </div>
                       <div>
                         <h5 className="text-sm font-semibold text-foreground mb-2">{t('admissions.coreCourses')}</h5>
                         <div className="flex flex-wrap gap-1.5">
-                          {program.courses.map((c) => (
+                          {program.features.map((c) => (
                             <Badge key={c} variant="outline" className="text-xs">{c}</Badge>
                           ))}
                         </div>
                       </div>
                       <div>
                         <h5 className="text-sm font-semibold text-foreground mb-1">{t('admissions.careerDirection')}</h5>
-                        <div className="flex flex-wrap gap-1.5">
-                          {program.careerDirections.map((c) => (
-                            <Badge key={c} variant="secondary" className="text-xs">{c}</Badge>
-                          ))}
+                        <div className="text-sm text-muted-foreground">
+                          {program.department}
                         </div>
                       </div>
                     </CardContent>
@@ -156,31 +155,26 @@ export default function AdmissionsTabsSection() {
                     {t('admissions.careerServiceTitle')}
                   </CardTitle>
                   <CardDescription>
-                    {careerGuide.overview}
+                    {t('admissions.careerServiceDesc')}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-6">
-                  <div>
-                    <h5 className="text-sm font-semibold text-foreground mb-3">{t('admissions.careerResources')}</h5>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {careerGuide.resources.map((resource, i) => (
-                        <div key={i} className="flex gap-3 p-3 rounded-lg border bg-card/50">
-                          <CheckCircle className="size-5 text-primary shrink-0 mt-0.5" />
-                          <div className="text-sm text-foreground">{resource}</div>
+                <CardContent>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {careerGuide.map((career, i) => (
+                      <div key={career.id} className="flex gap-3 p-4 rounded-lg border bg-card/50">
+                        <div className="size-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 text-xl">
+                          {career.icon}
                         </div>
-                      ))}
-                    </div>
-                  </div>
-                  <div>
-                    <h5 className="text-sm font-semibold text-foreground mb-3">{t('admissions.careerActivities')}</h5>
-                    <div className="space-y-2">
-                      {careerGuide.activities.map((activity, i) => (
-                        <div key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="size-4 text-primary" />
-                          {activity}
+                        <div className="min-w-0 flex-1">
+                          <h4 className="font-semibold text-foreground text-sm">{career.title}</h4>
+                          <p className="text-xs text-muted-foreground mt-1">{career.description}</p>
+                          <div className="flex items-center gap-3 mt-2 text-xs">
+                            <span className="text-muted-foreground">薪资: {career.salary}</span>
+                            <span className="text-primary font-medium">需求: {career.demand}</span>
+                          </div>
                         </div>
-                      ))}
-                    </div>
+                      </div>
+                    ))}
                   </div>
                 </CardContent>
               </Card>
@@ -192,12 +186,22 @@ export default function AdmissionsTabsSection() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  {careerGuide.statistics.map((stat) => (
-                    <div key={stat.label} className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
-                      <span className="text-sm text-muted-foreground">{stat.label}</span>
-                      <span className="text-lg font-bold text-primary tabular-nums">{stat.value}</span>
-                    </div>
-                  ))}
+                  <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
+                    <span className="text-sm text-muted-foreground">就业率</span>
+                    <span className="text-lg font-bold text-primary tabular-nums">95%</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
+                    <span className="text-sm text-muted-foreground">平均起薪</span>
+                    <span className="text-lg font-bold text-primary tabular-nums">$800</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
+                    <span className="text-sm text-muted-foreground">合作医院</span>
+                    <span className="text-lg font-bold text-primary tabular-nums">28家</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 rounded-lg bg-muted/50">
+                    <span className="text-sm text-muted-foreground">海外就业</span>
+                    <span className="text-lg font-bold text-primary tabular-nums">15%</span>
+                  </div>
                 </CardContent>
               </Card>
             </div>
@@ -233,7 +237,7 @@ export default function AdmissionsTabsSection() {
                             </div>
                             <div className="min-w-0 flex-1">
                               <h4 className="font-semibold text-foreground text-sm">{partner.name}</h4>
-                              <Badge variant="outline" className="mt-1 text-xs">{partner.field}</Badge>
+                              <Badge variant="outline" className="mt-1 text-xs">{partner.type}</Badge>
                               <p className="text-xs text-muted-foreground mt-2 line-clamp-3">{partner.description}</p>
                             </div>
                           </div>

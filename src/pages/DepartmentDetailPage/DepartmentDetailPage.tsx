@@ -23,7 +23,7 @@ export default function DepartmentDetailPage() {
   const { t, language } = useTranslation()
   const allFaculty = useFaculty()
 
-  const department = getDepartmentById(id || '', language)
+  const department = getDepartmentById(language, id || '')
 
   if (!department) {
     return (

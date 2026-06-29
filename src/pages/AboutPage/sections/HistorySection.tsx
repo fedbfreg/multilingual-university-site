@@ -1,7 +1,7 @@
 import { memo } from 'react';
 import { motion } from 'framer-motion';
 import { Image } from '@/components/ui/image';
-import { MOCK_HISTORY, type IHistoryMilestone } from '@/data/about';
+import { useHistory, type IHistoryMilestone } from '@/data/about';
 import { useTranslation } from '@/i18n/I18nContext';
 
 interface HistorySectionProps {
@@ -20,8 +20,10 @@ const MILESTONE_DESC_KEYS: Record<string, string> = {
   '率先成立人工智能学院，获批省级重点实验室。': 'about.historyMilestone3Desc',
 };
 
-export default memo(function HistorySection({ milestones = MOCK_HISTORY }: HistorySectionProps) {
+export default memo(function HistorySection({ milestones }: HistorySectionProps) {
   const { t } = useTranslation();
+  const defaultMilestones = useHistory();
+  const displayMilestones = milestones ?? defaultMilestones;
 
   return (
     <section className="w-full py-16 md:py-24">
@@ -46,7 +48,7 @@ export default memo(function HistorySection({ milestones = MOCK_HISTORY }: Histo
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2 bg-border" />
 
           <div className="space-y-12 md:space-y-0">
-            {milestones.map((item, index) => {
+            {displayMilestones.map((item, index) => {
               const isLeft = index % 2 === 0;
               const titleKey = MILESTONE_TITLE_KEYS[item.title];
               const descKey = MILESTONE_DESC_KEYS[item.description];

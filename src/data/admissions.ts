@@ -22,6 +22,11 @@ export interface IAdmissionInfo {
   semesterStart: string;
   intake: string;
   steps: { title: string; description: string }[];
+  // 新增属性，用于 AdmissionsTabsSection
+  policy: string;
+  requirements: string[];
+  process: { step: string; title: string; description?: string }[];
+  importantDates: { label: string; date: string }[];
 }
 
 export interface IAdmissionRequirement {
@@ -149,6 +154,28 @@ const ADMISSION_INFO_ZH: IAdmissionInfo = {
     { title: '录取通知', description: '通过审核后发放录取通知书和邀请函' },
     { title: '签证办理', description: '凭录取通知书办理学生签证' },
     { title: '入学报到', description: '按规定时间到校报到，办理入学手续' }
+  ],
+  policy: '我校奉行公平、公正、公开的招生原则，欢迎来自全球各地的优秀学子申请就读。我们注重学生的综合素质和学术潜力，致力于培养具有国际视野的医学人才。',
+  requirements: [
+    '高中毕业或同等学历，成绩优良',
+    '身体健康，符合医学专业体检要求',
+    '具备相应的语言能力（俄语/英语/吉尔吉斯语）',
+    '通过入学考试或面试评估',
+    '提供完整的申请材料'
+  ],
+  process: [
+    { step: '1', title: '在线申请' },
+    { step: '2', title: '材料审核' },
+    { step: '3', title: '入学考试' },
+    { step: '4', title: '录取通知' },
+    { step: '5', title: '签证办理' },
+    { step: '6', title: '入学报到' }
+  ],
+  importantDates: [
+    { label: '春季学期申请截止', date: '12月31日' },
+    { label: '秋季学期申请截止', date: '7月31日' },
+    { label: '春季学期开学', date: '2月1日' },
+    { label: '秋季学期开学', date: '9月1日' }
   ]
 };
 
@@ -306,6 +333,28 @@ const ADMISSION_INFO_EN: IAdmissionInfo = {
     { title: 'Admission Offer', description: 'Receive admission letter and invitation letter upon approval' },
     { title: 'Visa Application', description: 'Apply for student visa with admission letter' },
     { title: 'Registration', description: 'Arrive on campus and complete enrollment procedures' }
+  ],
+  policy: 'We adhere to the principles of fairness, justice, and openness in admissions. We welcome outstanding students from around the world to apply. We value students\' comprehensive qualities and academic potential, and are committed to cultivating medical talents with international perspectives.',
+  requirements: [
+    'High school diploma or equivalent with good academic standing',
+    'Good health, meeting medical program physical examination requirements',
+    'Proficiency in corresponding language (Russian/English/Kyrgyz)',
+    'Pass entrance examination or interview assessment',
+    'Submit complete application materials'
+  ],
+  process: [
+    { step: '1', title: 'Online Application' },
+    { step: '2', title: 'Document Review' },
+    { step: '3', title: 'Entrance Exam' },
+    { step: '4', title: 'Admission Offer' },
+    { step: '5', title: 'Visa Application' },
+    { step: '6', title: 'Registration' }
+  ],
+  importantDates: [
+    { label: 'Spring Semester Deadline', date: 'December 31' },
+    { label: 'Fall Semester Deadline', date: 'July 31' },
+    { label: 'Spring Semester Starts', date: 'February 1' },
+    { label: 'Fall Semester Starts', date: 'September 1' }
   ]
 };
 
@@ -463,6 +512,28 @@ const ADMISSION_INFO_KY: IAdmissionInfo = {
     { title: 'Кабыл алуу хаты', description: 'Макулдангандан кийин кабыл алуу хаты жана шақыруу хатын алыңыз' },
     { title: 'Визаны иштетүү', description: 'Кабыл алуу хаты менен студент визасын иштетиңиз' },
     { title: 'Катталуу', description: 'Кампуска келип, катталуу процедураларын аткарыңыз' }
+  ],
+  policy: 'Биз кабыл алууда адилеттилик, адилдик жана ачык принциптерин кармайбыз. Дүйнөнүн ар жагынан келген мыкты студенттердин өткөн жазылуусун каршы алабыз. Биз студенттердин жалпы сапаттарына жана академиялык потенциалына маани беребиз.',
+  requirements: [
+    'Орто мектеп дипломи же тең деңгээл, жакындай белгилүү',
+    'Жакшы ден-соолук, медицина программасындын физикалык текшерүү талаптарына ылайыктуу',
+    'Тилиндеги жөндөм (орус/англис/кыргыз)',
+    'Кириш экзаменинен же интервьюдан өтүү',
+    'Толук кабыл алуу документтерин тапшыруу'
+  ],
+  process: [
+    { step: '1', title: 'Онлайн жазылуу' },
+    { step: '2', title: 'Документтерди текшерүү' },
+    { step: '3', title: 'Кириш экзамени' },
+    { step: '4', title: 'Кабыл алуу хаты' },
+    { step: '5', title: 'Визаны иштетүү' },
+    { step: '6', title: 'Катталуу' }
+  ],
+  importantDates: [
+    { label: 'Бахарлык семестр айрықчасы', date: '31-декабр' },
+    { label: 'Күзгү семестр айрықчасы', date: '31-июль' },
+    { label: 'Бахарлык семестр башталуусу', date: '1-февраль' },
+    { label: 'Күзгү семестр башталуусу', date: '1-сентябрь' }
   ]
 };
 
@@ -620,6 +691,28 @@ const ADMISSION_INFO_RU: IAdmissionInfo = {
     { title: 'Зачисление', description: 'Получите письмо о зачислении и приглашение после одобрения' },
     { title: 'Оформление визы', description: 'Оформите студенческую визу по письму о зачислении' },
     { title: 'Зачисление в колледж', description: 'Прибытие в кампус и оформление процедур зачисления' }
+  ],
+  policy: 'Мы придерживаемся принципов справедливости, объективности и открытости при приёме студентов. Мы приглашаем талантливых студентов со всего мира. Мы ценим комплексные качества и академический потенциал студентов.',
+  requirements: [
+    'Аттестат о среднем образовании или эквивалент с хорошими оценками',
+    'Хорошее состояние здоровья, соответствующее требованиям медицинской программы',
+    'Владение соответствующим языком (русский/английский/киргизский)',
+    'Прохождение вступительного экзамена или собеседования',
+    'Предоставление полного пакета документов'
+  ],
+  process: [
+    { step: '1', title: 'Онлайн-заявка' },
+    { step: '2', title: 'Проверка документов' },
+    { step: '3', title: 'Вступительные испытания' },
+    { step: '4', title: 'Зачисление' },
+    { step: '5', title: 'Оформление визы' },
+    { step: '6', title: 'Зачисление в колледж' }
+  ],
+  importantDates: [
+    { label: 'Весенний семестр', date: '31 декабря' },
+    { label: 'Осенний семестр', date: '31 июля' },
+    { label: 'Начало весеннего семестра', date: '1 февраля' },
+    { label: 'Начало осеннего семестра', date: '1 сентября' }
   ]
 };
 
@@ -700,6 +793,10 @@ export function usePrograms(): IAdmissionProgram[] {
 export function useAdmissionsGuide() {
   return useAdmissionInfo();
 }
+
+// Alias for backward compatibility
+export const useAdmissionGuide = useAdmissionsGuide;
+
 
 export interface IPartner {
   id: string;

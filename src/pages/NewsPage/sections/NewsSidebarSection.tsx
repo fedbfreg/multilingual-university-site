@@ -5,7 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
-import { MOCK_NEWS, type INews } from '@/data/news';
+import { useNews, type INews } from '@/data/news';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const CATEGORY_KEYS = ['all', '学校新闻', '学术讲座', '重要活动'] as const;
@@ -31,14 +31,15 @@ export default function NewsSidebarSection({
   onSearchChange,
 }: NewsSidebarSectionProps) {
   const { t } = useTranslation();
+  const allNews = useNews();
 
   const hotNews = useMemo(() => {
-    return [...MOCK_NEWS].sort((a, b) => {
+    return [...allNews].sort((a, b) => {
       const aLen = a.content.length;
       const bLen = b.content.length;
       return bLen - aLen;
     }).slice(0, 5);
-  }, []);
+  }, [allNews]);
 
   return (
     <aside className="space-y-6">

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MOCK_MISSIONS } from '@/data/about';
+import { useMission } from '@/data/about';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const TYPE_KEY_MAP: Record<string, string> = {
@@ -22,6 +22,13 @@ const iconMap: Record<string, string> = {
 
 export default function MissionSection() {
   const { t } = useTranslation();
+  const missionData = useMission();
+  
+  const items = [
+    { id: 'mission', type: 'mission', icon: '🎯', label: missionData.mission.label, content: missionData.mission.content },
+    { id: 'vision', type: 'vision', icon: '🔭', label: missionData.vision.label, content: missionData.vision.content },
+    { id: 'values', type: 'value', icon: '💎', label: missionData.values.label, content: missionData.values.content },
+  ];
 
   return (
     <section className="w-full py-16 md:py-20">
@@ -42,7 +49,7 @@ export default function MissionSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {MOCK_MISSIONS.map((item, i) => (
+          {items.map((item, i) => (
             <motion.div
               key={item.id}
               initial={{ opacity: 0, y: 30 }}
@@ -56,10 +63,10 @@ export default function MissionSection() {
                 <span className={iconMap[item.icon] ?? 'text-3xl'}>{item.icon}</span>
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">
-                {t(TYPE_KEY_MAP[item.type] ?? 'about.missionLabel')}
+                {item.label}
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                {t(TYPE_CONTENT_MAP[item.type] ?? 'about.missionContent')}
+                {item.content}
               </p>
             </motion.div>
           ))}

@@ -6,11 +6,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
-import { MOCK_DEPARTMENTS, type IDepartment } from '@/data/departments';
+import { useDepartments, type IDepartment } from '@/data/departments';
 import { useTranslation } from '@/i18n/I18nContext';
 
 export default function DepartmentsPage() {
   const { t } = useTranslation();
+  const departments = useDepartments();
   const [filter, setFilter] = useState('all');
 
   const FILTER_OPTIONS = [
@@ -20,9 +21,9 @@ export default function DepartmentsPage() {
   ];
 
   const filtered = useMemo(() => {
-    if (filter === 'all') return MOCK_DEPARTMENTS;
-    return MOCK_DEPARTMENTS.filter((d) => d.category === filter);
-  }, [filter]);
+    if (filter === 'all') return departments;
+    return departments.filter((d) => d.category === filter);
+  }, [filter, departments]);
 
   return (
     <div className="min-h-screen bg-background">

@@ -18,7 +18,7 @@ export default function NewsDetailPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const { t, language } = useTranslation()
-  const news = getNewsById(id || '', language)
+  const news = getNewsById(language, id || '')
 
   if (!news) {
     return (

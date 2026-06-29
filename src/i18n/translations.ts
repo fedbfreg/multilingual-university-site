@@ -135,6 +135,20 @@ export const translations = {
     'departments.filterScience': '医学技术',
     'departments.programsCount': '{count} 个专业方向',
     'departments.noResult': '暂无该分类下的学系',
+    'departments.notFound': '院系未找到',
+    'departments.notFoundDesc': '抱歉，您访问的院系信息不存在或已被移除。',
+    'departments.backToList': '返回院系列表',
+
+    // 院系详情页
+    'dept.introTitle': '学院简介',
+    'dept.featuresTitle': '专业特色',
+    'dept.researchTitle': '科研方向',
+    'departments.programsTitle': '开设专业',
+    'departments.noPrograms': '暂无专业信息',
+    'departments.degreeBachelor': '本科',
+    'departments.degreeMaster': '硕士',
+    'departments.degreeDoctor': '博士',
+    'departments.durationLabel': '学制',
     'departments.csName': '临床医学系',
     'departments.csEnglishName': 'Department of General Medicine',
     'departments.csDesc': '中央国际医学院建校之初设立的核心学系，拥有国际认证专业，致力于培养具有扎实医学理论基础和卓越临床能力的医学人才。',
@@ -180,6 +194,9 @@ export const translations = {
     'faculty.titleLecturer': '讲师',
     'faculty.noResult': '未找到匹配的教师',
     'faculty.noResultHint': '请尝试调整筛选条件',
+    'faculty.notFound': '教师信息未找到',
+    'faculty.notFoundDesc': '抱歉，您访问的教师信息不存在或已被移除。',
+    'faculty.backToList': '返回师资列表',
 
     // ── 教师详情 ──
     'facultyDetail.breadcrumbHome': '首页',
@@ -260,6 +277,8 @@ export const translations = {
     'news.sidebarHot': '🔥 热门新闻',
     'news.noResult': '未找到相关新闻',
     'news.noResultHint': '请尝试其他关键词或分类',
+    'news.notFound': '新闻未找到',
+    'news.backToList': '返回新闻列表',
     'news.paginationPrev': '上一页',
     'news.paginationNext': '下一页',
 
@@ -446,6 +465,20 @@ export const translations = {
     'departments.filterScience': 'Илим',
     'departments.programsCount': '{count} адистик',
     'departments.noResult': 'Бул категорияда факультет жок',
+    'departments.notFound': 'Факультет табылган жок',
+    'departments.notFoundDesc': 'Кечиресиз, сиз киргизген факультет маалыматы жок же жок кылынган.',
+    'departments.backToList': 'Факультеттер тизмесине кайтуу',
+
+    // 院系详情页
+    'dept.introTitle': 'Колледж жөнүндө',
+    'dept.featuresTitle': 'Бөлүмдүн өзгөчөлүгү',
+    'dept.researchTitle': 'Издөө багыты',
+    'departments.programsTitle': 'Ачык мамлекеттер',
+    'departments.noPrograms': 'Мамлекет маалыматы жок',
+    'departments.degreeBachelor': 'Бакалавр',
+    'departments.degreeMaster': 'Магистр',
+    'departments.degreeDoctor': 'Доктор',
+    'departments.durationLabel': 'Окуу мөөнөтү',
     'departments.csName': 'Эсептөө илими жана технологиясы',
     'departments.csEnglishName': 'Department of General Medicine',
     'departments.csDesc': 'CMSC негизделгенден бери иштеп келе жаткан негизги факультет, улуттук деңгээлдеги адистикке ээ.',
@@ -491,6 +524,9 @@ export const translations = {
     'faculty.titleLecturer': 'Окутуучу',
     'faculty.noResult': 'Дал келген окутуучу табылган жок',
     'faculty.noResultHint': 'Чыпкалоо шарттарын өзгөртүп көрүңүз',
+    'faculty.notFound': 'Окутуучу маалыматы табылган жок',
+    'faculty.notFoundDesc': 'Кечиресиз, сиз киргизген окутуучу маалыматы жок же жок кылынган.',
+    'faculty.backToList': 'Окутуучулар тизмесине кайтуу',
 
     // ── Окутуучу маалыматы ──
     'facultyDetail.breadcrumbHome': 'Башкы бет',
@@ -571,6 +607,8 @@ export const translations = {
     'news.sidebarHot': '🔥 Популярдуу',
     'news.noResult': 'Тиешелүү жаңылык табылган жок',
     'news.noResultHint': 'Башка ачкыч сөздөрдү же категорияларды колдонуп көрүңүз',
+    'news.notFound': 'Жаңылык табылган жок',
+    'news.backToList': 'Жаңылыктар тизмесине кайтуу',
     'news.paginationPrev': 'Мурунку',
     'news.paginationNext': 'Кийинки',
 
@@ -757,6 +795,20 @@ export const translations = {
     'departments.filterScience': 'Наука',
     'departments.programsCount': '{count} направлений',
     'departments.noResult': 'Нет факультетов в этой категории',
+    'departments.notFound': 'Факультет не найден',
+    'departments.notFoundDesc': 'К сожалению, информация о факультете не существует или была удалена.',
+    'departments.backToList': 'Вернуться к списку факультетов',
+
+    // 院系详情页
+    'dept.introTitle': 'О факультете',
+    'dept.featuresTitle': 'Особенности программы',
+    'dept.researchTitle': 'Научные направления',
+    'departments.programsTitle': 'Направления подготовки',
+    'departments.noPrograms': 'Нет информации о программах',
+    'departments.degreeBachelor': 'Бакалавриат',
+    'departments.degreeMaster': 'Магистратура',
+    'departments.degreeDoctor': 'Докторантура',
+    'departments.durationLabel': 'Срок обучения',
     'departments.csName': 'Компьютерные науки и технологии',
     'departments.csEnglishName': 'Department of General Medicine',
     'departments.csDesc': 'Базовый факультет CMSC с национально признанной специальностью, готовит специалистов с прочной теорией и инженерными навыками.',
@@ -802,6 +854,9 @@ export const translations = {
     'faculty.titleLecturer': 'Преподаватель',
     'faculty.noResult': 'Преподаватели не найдены',
     'faculty.noResultHint': 'Попробуйте изменить условия фильтрации',
+    'faculty.notFound': 'Преподаватель не найден',
+    'faculty.notFoundDesc': 'К сожалению, информация о преподавателе не существует или была удалена.',
+    'faculty.backToList': 'Вернуться к списку преподавателей',
 
     // ── Детали преподавателя ──
     'facultyDetail.breadcrumbHome': 'Главная',
@@ -882,6 +937,8 @@ export const translations = {
     'news.sidebarHot': '🔥 Популярное',
     'news.noResult': 'Новости не найдены',
     'news.noResultHint': 'Попробуйте другие ключевые слова или категории',
+    'news.notFound': 'Новость не найдена',
+    'news.backToList': 'Вернуться к списку новостей',
     'news.paginationPrev': 'Предыдущая',
     'news.paginationNext': 'Следующая',
 
@@ -1068,6 +1125,20 @@ export const translations = {
     'departments.filterScience': 'Medical Technology',
     'departments.programsCount': '{count} Programs',
     'departments.noResult': 'No departments in this category',
+    'departments.notFound': 'Department Not Found',
+    'departments.notFoundDesc': 'Sorry, the department information you are looking for does not exist or has been removed.',
+    'departments.backToList': 'Back to Departments List',
+
+    // Department Detail
+    'dept.introTitle': 'About Department',
+    'dept.featuresTitle': 'Program Features',
+    'dept.researchTitle': 'Research Areas',
+    'departments.programsTitle': 'Programs Offered',
+    'departments.noPrograms': 'No program information available',
+    'departments.degreeBachelor': 'Bachelor',
+    'departments.degreeMaster': 'Master',
+    'departments.degreeDoctor': 'Doctorate',
+    'departments.durationLabel': 'Duration',
     'departments.csName': 'General Medicine',
     'departments.csEnglishName': 'Department of General Medicine',
     'departments.csDesc': 'The founding department of CIMC with internationally accredited programs, dedicated to cultivating medical talent with solid theory and clinical skills.',
@@ -1113,6 +1184,9 @@ export const translations = {
     'faculty.titleLecturer': 'Lecturer',
     'faculty.noResult': 'No matching faculty found',
     'faculty.noResultHint': 'Try adjusting your filter criteria',
+    'faculty.notFound': 'Faculty Not Found',
+    'faculty.notFoundDesc': 'Sorry, the faculty information you are looking for does not exist or has been removed.',
+    'faculty.backToList': 'Back to Faculty List',
 
     // ── Faculty Detail ──
     'facultyDetail.breadcrumbHome': 'Home',
@@ -1193,6 +1267,8 @@ export const translations = {
     'news.sidebarHot': '🔥 Trending',
     'news.noResult': 'No news found',
     'news.noResultHint': 'Try different keywords or categories',
+    'news.notFound': 'News Not Found',
+    'news.backToList': 'Back to News List',
     'news.paginationPrev': 'Previous',
     'news.paginationNext': 'Next',
 

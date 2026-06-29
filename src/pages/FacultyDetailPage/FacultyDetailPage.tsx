@@ -18,7 +18,7 @@ export default function FacultyDetailPage() {
   const { id } = useParams<{ id: string }>()
   const navigate = useNavigate()
   const { t, language } = useTranslation()
-  const faculty = getFacultyById(id || '', language)
+  const faculty = getFacultyById(language, id || '')
 
   if (!faculty) {
     return (

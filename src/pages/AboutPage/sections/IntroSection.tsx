@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Image } from '@/components/ui/image';
-import { MOCK_ABOUT } from '@/data/about';
+import { useAbout } from '@/data/about';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const containerVariants = {
@@ -22,7 +22,7 @@ const itemVariants = {
 
 export default function IntroSection() {
   const { t } = useTranslation();
-  const { introduction, positioning, features, achievements } = MOCK_ABOUT;
+  const { introduction, positioning, features, achievements } = useAbout();
 
   return (
     <section className="w-full py-16 md:py-24">
@@ -38,7 +38,7 @@ export default function IntroSection() {
           <motion.div variants={itemVariants} className="relative">
             <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg">
               <Image
-                src="/spark/app/app_179273k2er2/runtime/api/v1/storage/object/bucket_aadkidgowlejq_static/static%2Faadkh6sggq4eq_ve_miaoda"
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80"
                 alt="CMSC 校园航拍全景"
                 className="w-full h-full object-cover"
               />

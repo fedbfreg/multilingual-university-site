@@ -171,7 +171,7 @@ export default function NewsPage() {
                         <div className="flex flex-col sm:flex-row">
                           <div className="sm:w-56 shrink-0">
                             <Image
-                              src={item.imageUrl}
+                              src={item.coverImage}
                               alt={item.title}
                               className="w-full h-40 sm:h-full object-cover"
                             />

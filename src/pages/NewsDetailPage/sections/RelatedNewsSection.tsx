@@ -81,7 +81,7 @@ export default function RelatedNewsSection({ currentNewsId }: RelatedNewsSection
                 <Card className="overflow-hidden h-full transition-shadow hover:shadow-md">
                   <div className="aspect-video overflow-hidden">
                     <Image
-                      src={item.imageUrl}
+                      src={item.coverImage}
                       alt={item.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />

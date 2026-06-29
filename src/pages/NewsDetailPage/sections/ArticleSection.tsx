@@ -79,10 +79,10 @@ export default function ArticleSection({ article }: ArticleSectionProps) {
       </h1>
 
       {/* 封面图 */}
-      {article.imageUrl && (
+      {article.coverImage && (
         <div className="mb-8 rounded-xl overflow-hidden">
           <Image
-            src={article.imageUrl}
+            src={article.coverImage}
             alt={article.title}
             className="w-full aspect-video object-cover"
           />

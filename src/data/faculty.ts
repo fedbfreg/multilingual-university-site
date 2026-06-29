@@ -8,7 +8,7 @@ export interface IFaculty {
   title: string;
   department: string;
   departmentId: string;
-  avatarUrl: string;
+  imageUrl: string;
   bio: string;
   researchArea: string[];
   achievements: string[];
@@ -23,7 +23,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '教授 / 校长',
     department: '临床医学系',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
     bio: 'Taaha al Safar 教授，中央国际医学院校长，医学博士，博士生导师。拥有超过25年的医学教育与临床经验，曾在多所国际知名医学院校担任领导职务。主要研究方向为心血管疾病与公共卫生管理。',
     researchArea: ['心血管疾病', '公共卫生管理', '医学教育'],
     achievements: [
@@ -40,7 +40,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '教授 / 系主任',
     department: '临床医学系',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Mu'taz el Abdi 教授，临床医学系主任，内科学专家。在中东和中亚地区拥有丰富的临床教学经验，专注于心血管疾病的诊断与治疗研究。",
     researchArea: ['心血管内科学', '高血压防治', '临床流行病学'],
     achievements: [
@@ -57,7 +57,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '副教授',
     department: '护理学系',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
     bio: 'Shameema el Taheri 副教授，护理学专家。拥有18年护理教育与临床护理经验，专注于重症监护护理与护理管理研究。',
     researchArea: ['重症监护护理', '护理质量管理', '护理教育'],
     achievements: [
@@ -74,7 +74,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '教授 / 系主任',
     department: '药学系',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Saara al Faris 教授，药学系主任，药剂学专家。在药物研发与临床药学领域有深厚造诣，曾在多家国际制药企业担任高级研究员。',
     researchArea: ['临床药学', '药物代谢动力学', '天然药物研究'],
     achievements: [
@@ -91,7 +91,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '副教授',
     department: '牙科学系',
     departmentId: '4',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Jasra al Munir 副教授，口腔医学专家。专注于口腔修复与正畸学研究，拥有丰富的临床经验和教学经验。',
     researchArea: ['口腔修复学', '口腔正畸学', '口腔种植学'],
     achievements: [
@@ -108,7 +108,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '教授 / 系主任',
     department: '公共卫生系',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
     bio: 'Khalid al Rahman 教授，公共卫生系主任，流行病学专家。在传染病防控与公共卫生政策研究领域享有国际声誉。',
     researchArea: ['流行病学', '传染病防控', '公共卫生政策'],
     achievements: [
@@ -125,7 +125,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '教授 / 系主任',
     department: '医学技术系',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
     bio: 'Noor el Hassan 教授，医学技术系主任，医学检验专家。在医学检验技术与实验室诊断领域有深入研究。',
     researchArea: ['医学检验技术', '实验室诊断', '分子诊断学'],
     achievements: [
@@ -142,7 +142,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '副教授',
     department: '临床医学系',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Amira el Sayed 副教授，妇产科学专家。在妇产科临床与教学方面有丰富经验，专注于妇幼健康研究。',
     researchArea: ['妇产科学', '妇幼保健', '生殖医学'],
     achievements: [
@@ -159,7 +159,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '讲师',
     department: '护理学系',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Omar al Jaber 讲师，护理学专业教师。专注于社区护理与老年护理研究，拥有丰富的临床护理经验。',
     researchArea: ['社区护理', '老年护理', '康复护理'],
     achievements: [
@@ -176,7 +176,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '副教授',
     department: '药学系',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1597377852691-7c06f93d7a7d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
     bio: 'Layla al Qasim 副教授，药理学专家。在药物作用机制与临床合理用药研究方面有突出成果。',
     researchArea: ['药理学', '临床药学', '药物不良反应监测'],
     achievements: [
@@ -193,7 +193,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '教授',
     department: '公共卫生系',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Yousef el Amin 教授，环境卫生学专家。在环境与健康关系研究领域有深厚学术积累。',
     researchArea: ['环境卫生学', '职业卫生', '健康风险评估'],
     achievements: [
@@ -210,7 +210,7 @@ const FACULTY_ZH: IFaculty[] = [
     title: '讲师',
     department: '医学技术系',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Hana al Khalil 讲师，医学影像技术专家。专注于医学影像诊断技术与影像设备研究。',
     researchArea: ['医学影像技术', '放射诊断', '医学图像处理'],
     achievements: [
@@ -231,7 +231,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Professor / Rector',
     department: 'General Medicine',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
     bio: 'Professor Taaha al Safar, Rector of Central International Medical College, MD, PhD supervisor. With over 25 years of medical education and clinical experience, he has held leadership positions at multiple internationally renowned medical schools. His main research areas are cardiovascular diseases and public health management.',
     researchArea: ['Cardiovascular Diseases', 'Public Health Management', 'Medical Education'],
     achievements: [
@@ -248,7 +248,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Professor / Department Head',
     department: 'General Medicine',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Professor Mu'taz el Abdi, Head of General Medicine Department, internal medicine specialist. With extensive clinical teaching experience in the Middle East and Central Asia, he focuses on cardiovascular disease diagnosis and treatment research.",
     researchArea: ['Cardiovascular Medicine', 'Hypertension Prevention', 'Clinical Epidemiology'],
     achievements: [
@@ -265,7 +265,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Associate Professor',
     department: 'Nursing',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
     bio: 'Associate Professor Shameema el Taheri, nursing specialist. With 18 years of nursing education and clinical experience, she focuses on critical care nursing and nursing management research.',
     researchArea: ['Critical Care Nursing', 'Nursing Quality Management', 'Nursing Education'],
     achievements: [
@@ -282,7 +282,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Professor / Department Head',
     department: 'Pharmacy',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Professor Saara al Faris, Head of Pharmacy Department, pharmaceutical sciences expert. With deep expertise in drug development and clinical pharmacy, she has served as senior researcher at multiple international pharmaceutical companies.',
     researchArea: ['Clinical Pharmacy', 'Pharmacokinetics', 'Natural Medicine Research'],
     achievements: [
@@ -299,7 +299,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Associate Professor',
     department: 'Dentistry',
     departmentId: '4',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Associate Professor Jasra al Munir, dental medicine specialist. Focusing on prosthodontics and orthodontics research, with rich clinical and teaching experience.',
     researchArea: ['Prosthodontics', 'Orthodontics', 'Dental Implantology'],
     achievements: [
@@ -316,7 +316,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Professor / Department Head',
     department: 'Public Health',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
     bio: 'Professor Khalid al Rahman, Head of Public Health Department, epidemiology expert. With international reputation in infectious disease prevention and public health policy research.',
     researchArea: ['Epidemiology', 'Infectious Disease Control', 'Public Health Policy'],
     achievements: [
@@ -333,7 +333,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Professor / Department Head',
     department: 'Medical Technology',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
     bio: 'Professor Noor el Hassan, Head of Medical Technology Department, medical laboratory science expert. With in-depth research in medical laboratory technology and diagnostic testing.',
     researchArea: ['Medical Laboratory Technology', 'Laboratory Diagnostics', 'Molecular Diagnostics'],
     achievements: [
@@ -350,7 +350,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Associate Professor',
     department: 'General Medicine',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Associate Professor Amira el Sayed, obstetrics and gynecology specialist. With rich clinical and teaching experience in obstetrics and gynecology, focusing on maternal and child health research.',
     researchArea: ['Obstetrics & Gynecology', 'Maternal & Child Health', 'Reproductive Medicine'],
     achievements: [
@@ -367,7 +367,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Lecturer',
     department: 'Nursing',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Lecturer Omar al Jaber, nursing faculty. Focusing on community nursing and geriatric nursing research, with extensive clinical nursing experience.',
     researchArea: ['Community Nursing', 'Geriatric Nursing', 'Rehabilitation Nursing'],
     achievements: [
@@ -384,7 +384,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Associate Professor',
     department: 'Pharmacy',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1597377852691-7c06f93d7a7d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
     bio: 'Associate Professor Layla al Qasim, pharmacology expert. With outstanding achievements in drug mechanism research and rational clinical drug use.',
     researchArea: ['Pharmacology', 'Clinical Pharmacy', 'Adverse Drug Reaction Monitoring'],
     achievements: [
@@ -401,7 +401,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Professor',
     department: 'Public Health',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Professor Yousef el Amin, environmental health expert. With deep academic accumulation in environment and health relationship research.',
     researchArea: ['Environmental Health', 'Occupational Health', 'Health Risk Assessment'],
     achievements: [
@@ -418,7 +418,7 @@ const FACULTY_EN: IFaculty[] = [
     title: 'Lecturer',
     department: 'Medical Technology',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Lecturer Hana al Khalil, medical imaging technology specialist. Focusing on medical imaging diagnostic technology and imaging equipment research.',
     researchArea: ['Medical Imaging Technology', 'Radiology', 'Medical Image Processing'],
     achievements: [
@@ -439,7 +439,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Профессор / Ректор',
     department: 'Жалпы медицина',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
     bio: 'Профессор Тааха аль Сафар, Централдык Эл аралык Медицина Колледжинин ректори, медицина илимдору доктору, доктордук диссертация жетекчиси. 25 жылдан ашуун медицина билим берүү жана клиникалык тажрыйбасы бар, эл аралык таанымал медицина мектептеринде жетекчилдик позицияларында иштеген.',
     researchArea: ['Жүрөк-кан оорулары', 'Жалпы ден-соолук башкаруу', 'Медицина билим берүү'],
     achievements: [
@@ -456,7 +456,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Профессор / Факультет башчысы',
     department: 'Жалпы медицина',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Профессор Мутаз эл Абди, Жалпы медицина факультетинин башчысы, ички оорулар адисти. Жүнүндүк Орто Азияда кең клиникалык окутуу тажрыйбасы бар, жүрөк-кан ооруларын диагноздоо жана дарылоо изилдөөлөрүнө багытталган.",
     researchArea: ['Жүрөк-кан медицинасы', 'Кан басымын алдын алуу', 'Клиникалык эпидемиология'],
     achievements: [
@@ -473,7 +473,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Доцент',
     department: 'Сестрачылык',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
     bio: 'Доцент Шамима эль Тахери, сестрачылык адисти. 18 жылдык сестрачылык билим берүү жана клиникалык тажрыйбасы бар, ауыр бакылап турган бөлүмдөрдүн сестрачылыгына жана сестрачылык башкаруусуна багытталган.',
     researchArea: ['Ауыр пациенттерди бакылап турган сестрачылык', 'Сестрачылык сапатын башкаруу', 'Сестрачылык билим берүү'],
     achievements: [
@@ -490,7 +490,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Профессор / Факультет башчысы',
     department: 'Дарыгерлик',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Профессор Саара аль Фарис, Дарыгерлик факультетинин башчысы, фармацевтика адисти. Дарыларды иштеп чыгуу жана клиникалык фармация тармагында терең тажрыйбасы бар.',
     researchArea: ['Клиникалык фармация', 'Дарылардын кинетикасы', 'Табигый дарыларды изилдөө'],
     achievements: [
@@ -507,7 +507,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Доцент',
     department: 'Стоматология',
     departmentId: '4',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Доцент Жасра аль Мунир, стоматология адисти. Протезирлөө жана ортодонтия изилдөөлөрүнө багытталган, бай клиникалык жана окутуу тажрыйбасы бар.',
     researchArea: ['Стоматологиялык протезирлөө', 'Ортодонтия', 'Стоматологиялык имплантология'],
     achievements: [
@@ -524,7 +524,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Профессор / Факультет башчысы',
     department: 'Жалпы ден-соолук',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
     bio: 'Профессор Халид аль Рахман, Жалпы ден-соолук факультетинин башчысы, эпидемиология адисти. Жугунуштуу ооруларды алдын алуу жана жалпы ден-соолук саясаты изилдөөлөрүндө эл аралык таанымалдуулукка ээ.',
     researchArea: ['Эпидемиология', 'Жугунуштуу ооруларды коргоо', 'Жалпы ден-соолук саясаты'],
     achievements: [
@@ -541,7 +541,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Профессор / Факультет башчысы',
     department: 'Медицина техникасы',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
     bio: 'Профессор Нур эль Хассан, Медицина техникасы факультетинин башчысы, медицина текшерүүсү адисти. Медицина лаборатория техникасы жана диагноздоо изилдөөлөрүндө терең тажрыйбасы бар.',
     researchArea: ['Медицина текшерүү техникасы', 'Лаборатория диагнозу', 'Молекулярдык диагноз'],
     achievements: [
@@ -558,7 +558,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Доцент',
     department: 'Жалпы медицина',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Доцент Амира эль Сайед, гинекология жана акушерство адисти. Гинекология жана акушерство боюнча бай клиникалык жана окутуу тажрыйбасы бар.',
     researchArea: ['Акушерство жана гинекология', 'Ана жана бала ден-соолугу', 'Репродуктивдик медицина'],
     achievements: [
@@ -575,7 +575,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Окутуучу',
     department: 'Сестрачылык',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Окутуучу Омар аль Жабер, сестрачылык кафедрасы мугалими. Жаңы сестрачылык жана жаштардын сестрачылыгына багытталган, кең клиникалык сестрачылык тажрыйбасы бар.',
     researchArea: ['Жаңы сестрачылык', 'Жаштар сестрачылыгы', 'Калпына келтирүү сестрачылыгы'],
     achievements: [
@@ -592,7 +592,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Доцент',
     department: 'Дарыгерлик',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1597377852691-7c06f93d7a7d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
     bio: 'Доцент Лейла аль Касим, фармакология адисти. Дарылардын таасир механизми жана клиникалык акылды дары колдонуу изилдөөлөрүндө атактуу натыйжаларга ээ.',
     researchArea: ['Фармакология', 'Клиникалык фармация', 'Дардын терс таасирин көзөмөлдөө'],
     achievements: [
@@ -609,7 +609,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Профессор',
     department: 'Жалпы ден-соолук',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Профессор Юсеф эль Амин, экологиялык ден-соолук адисти. Экология жана ден-соолук байланышын изилдөө тармагында терең академиялык тажрыйбасы бар.',
     researchArea: ['Экологиялык ден-соолук', 'Кесиптик ден-соолук', 'Ден-соолук рискин баалоо'],
     achievements: [
@@ -626,7 +626,7 @@ const FACULTY_KY: IFaculty[] = [
     title: 'Окутуучу',
     department: 'Медицина техникасы',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Окутуучу Хана аль Халиль, медицина сүрөт техникасы адисти. Медицина сүрөт диагнозу техникасы жана сүрөт түзүчүлөрүн изилдөөгө багытталган.',
     researchArea: ['Медицина сүрөт техникасы', 'Рентген диагнозу', 'Медицина сүрөтүн иштетүү'],
     achievements: [
@@ -647,7 +647,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Профессор / Ректор',
     department: 'Лечебное дело',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
     bio: 'Профессор Тааха аль Сафар, ректор Центрального Международного Медицинского Колледжа, доктор медицинских наук, руководитель докторских диссертаций. Более 25 лет опыта в медицинском образовании и клинической практике.',
     researchArea: ['Сердечно-сосудистые заболевания', 'Управление общественным здоровьем', 'Медицинское образование'],
     achievements: [
@@ -664,7 +664,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Профессор / Заведующий кафедрой',
     department: 'Лечебное дело',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Профессор Мутаз эль Абди, заведующий кафедрой лечебного дела, специалист по внутренним болезням. Большой опыт клинического преподавания на Ближнем Востоке и в Центральной Азии.",
     researchArea: ['Сердечно-сосудистая медицина', 'Профилактика артериальной гипертензии', 'Клиническая эпидемиология'],
     achievements: [
@@ -681,7 +681,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Доцент',
     department: 'Сестринское дело',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&q=80',
     bio: 'Доцент Шамима эль Тахери, специалист по сестринскому делу. 18 лет опыта сестринского образования и клинической практики, специализируется на реанимационном сестринском деле.',
     researchArea: ['Реанимационное сестринское дело', 'Управление качеством сестринского дела', 'Сестринское образование'],
     achievements: [
@@ -698,7 +698,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Профессор / Заведующий кафедрой',
     department: 'Фармация',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Профессор Саара аль Фарис, заведующая кафедрой фармации, специалист по фармацевтическим наукам. Глубокий опыт в разработке лекарств и клинической фармации.',
     researchArea: ['Клиническая фармация', 'Фармакокинетика', 'Исследование натуральных лекарств'],
     achievements: [
@@ -715,7 +715,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Доцент',
     department: 'Стоматология',
     departmentId: '4',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Доцент Жасра аль Мунир, специалист по стоматологии. Специализируется на ортопедической стоматологии и ортодонтии, имеет богатый клинический и преподавательский опыт.',
     researchArea: ['Ортопедическая стоматология', 'Ортодонтия', 'Стоматологическая имплантология'],
     achievements: [
@@ -732,7 +732,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Профессор / Заведующий кафедрой',
     department: 'Общественное здоровье',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80',
     bio: 'Профессор Халид аль Рахман, заведующий кафедрой общественного здоровья, специалист по эпидемиологии. Международная репутация в области профилактики инфекционных заболеваний.',
     researchArea: ['Эпидемиология', 'Профилактика инфекционных заболеваний', 'Политика общественного здоровья'],
     achievements: [
@@ -749,7 +749,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Профессор / Заведующий кафедрой',
     department: 'Медицинская техника',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&q=80',
     bio: 'Профессор Нур эль Хассан, заведующий кафедрой медицинской техники, специалист по лабораторной диагностике. Глубокие исследования в области медицинских лабораторных технологий.',
     researchArea: ['Медицинские лабораторные технологии', 'Лабораторная диагностика', 'Молекулярная диагностика'],
     achievements: [
@@ -766,7 +766,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Доцент',
     department: 'Лечебное дело',
     departmentId: '1',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Доцент Амира эль Сайед, специалист по акушерству и гинекологии. Богатый клинический и преподавательский опыт в области акушерства и гинекологии.',
     researchArea: ['Акушерство и гинекология', 'Здоровье матери и ребёнка', 'Репродуктивная медицина'],
     achievements: [
@@ -783,7 +783,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Преподаватель',
     department: 'Сестринское дело',
     departmentId: '2',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Преподаватель Омар аль Жабер, преподаватель кафедры сестринского дела. Специализируется на общественном сестринском деле и гериатрическом сестринском деле.',
     researchArea: ['Общественное сестринское дело', 'Гериатрическое сестринское дело', 'Реабилитационное сестринское дело'],
     achievements: [
@@ -800,7 +800,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Доцент',
     department: 'Фармация',
     departmentId: '3',
-    avatarUrl: 'https://images.unsplash.com/photo-1597377852691-7c06f93d7a7d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
     bio: 'Доцент Лейла аль Касим, специалист по фармакологии. Выдающиеся достижения в исследовании механизмов действия лекарств и рационального клинического применения.',
     researchArea: ['Фармакология', 'Клиническая фармация', 'Мониторинг побочных действий лекарств'],
     achievements: [
@@ -817,7 +817,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Профессор',
     department: 'Общественное здоровье',
     departmentId: '5',
-    avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80',
     bio: 'Профессор Юсеф эль Амин, специалист по гигиене окружающей среды. Глубокие академические знания в исследованиях связи окружающей среды и здоровья.',
     researchArea: ['Гигиена окружающей среды', 'Профессиональная гигиена', 'Оценка рисков для здоровья'],
     achievements: [
@@ -834,7 +834,7 @@ const FACULTY_RU: IFaculty[] = [
     title: 'Преподаватель',
     department: 'Медицинская техника',
     departmentId: '6',
-    avatarUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80',
     bio: 'Преподаватель Хана аль Халиль, специалист по медицинской визуализации. Специализируется на диагностических технологиях медицинской визуализации и оборудовании.',
     researchArea: ['Технологии медицинской визуализации', 'Рентгенодиагностика', 'Обработка медицинских изображений'],
     achievements: [

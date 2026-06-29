@@ -6,7 +6,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Image } from '@/components/ui/image';
-import { MOCK_NEWS, type INews } from '@/data/news';
+import { useNews, type INews } from '@/data/news';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const PAGE_SIZE = 4;
@@ -29,12 +29,13 @@ interface NewsListSectionProps {
 
 export default function NewsListSection({ selectedCategory }: NewsListSectionProps) {
   const { t } = useTranslation();
+  const allNews = useNews();
   const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
-    if (selectedCategory === 'all') return MOCK_NEWS;
-    return MOCK_NEWS.filter((n) => n.category === selectedCategory);
-  }, [selectedCategory]);
+    if (selectedCategory === 'all') return allNews;
+    return allNews.filter((n) => n.category === selectedCategory);
+  }, [selectedCategory, allNews]);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
   const safePage = Math.min(page, totalPages);
@@ -70,7 +71,7 @@ export default function NewsListSection({ selectedCategory }: NewsListSectionPro
                 <div className="flex flex-col sm:flex-row">
                   <div className="sm:w-56 shrink-0 overflow-hidden">
                     <Image
-                      src={news.imageUrl}
+                      src={news.coverImage}
                       alt={news.title}
                       className="w-full h-40 sm:h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

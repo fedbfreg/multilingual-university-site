@@ -117,8 +117,8 @@ const GALLERY_ZH: IGalleryImage[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
-    caption: '校园全景'
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
+    caption: '校园航拍全景'
   },
   {
     id: '6',
@@ -247,7 +247,7 @@ const GALLERY_EN: IGalleryImage[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: 'Campus Panorama'
   },
   {
@@ -377,7 +377,7 @@ const GALLERY_KY: IGalleryImage[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: 'Кампус панорамасы'
   },
   {
@@ -507,7 +507,7 @@ const GALLERY_RU: IGalleryImage[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: 'Панорама кампуса'
   },
   {

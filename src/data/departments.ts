@@ -99,7 +99,7 @@ const DEPARTMENTS_ZH: IDepartment[] = [
       { name: '口腔医学', degree: '本科', duration: '5年' },
       { name: '口腔临床医学', degree: '硕士', duration: '3年' }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1629909613654-28e377c37b08?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80',
     facultyCount: 18,
     studentCount: 124
   },
@@ -231,7 +231,7 @@ const DEPARTMENTS_EN: IDepartment[] = [
       { name: 'Dental Medicine', degree: 'Bachelor', duration: '5 years' },
       { name: 'Clinical Dentistry', degree: 'Master', duration: '3 years' }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1629909613654-28e377c37b08?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80',
     facultyCount: 18,
     studentCount: 124
   },
@@ -363,7 +363,7 @@ const DEPARTMENTS_KY: IDepartment[] = [
       { name: 'Стоматология', degree: 'Бакалавр', duration: '5 жыл' },
       { name: 'Клиникалык стоматология', degree: 'Магистр', duration: '3 жыл' }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1629909613654-28e377c37b08?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80',
     facultyCount: 18,
     studentCount: 124
   },
@@ -495,7 +495,7 @@ const DEPARTMENTS_RU: IDepartment[] = [
       { name: 'Стоматология', degree: 'Бакалавриат', duration: '5 лет' },
       { name: 'Клиническая стоматология', degree: 'Магистратура', duration: '3 года' }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1629909613654-28e377c37b08?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=800&q=80',
     facultyCount: 18,
     studentCount: 124
   },

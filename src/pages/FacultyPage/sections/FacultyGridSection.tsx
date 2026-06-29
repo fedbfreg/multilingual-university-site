@@ -14,7 +14,7 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Image } from '@/components/ui/image';
-import { IFaculty, MOCK_FACULTY_LIST } from '@/data/faculty';
+import { IFaculty, useFaculty } from '@/data/faculty';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const TITLE_OPTIONS = ['all', '教授', '副教授', '讲师'] as const;
@@ -47,12 +47,13 @@ const DEPT_TRANSLATION_KEYS: Record<string, string> = {
 export default function FacultyGridSection() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const facultyList = useFaculty();
   const [search, setSearch] = useState('');
   const [titleFilter, setTitleFilter] = useState<TitleFilter>('all');
   const [deptFilter, setDeptFilter] = useState<DeptFilter>('all');
 
   const filtered = useMemo(() => {
-    return MOCK_FACULTY_LIST.filter((f) => {
+    return facultyList.filter((f) => {
       const matchSearch =
         !search ||
         f.name.includes(search) ||
@@ -62,7 +63,7 @@ export default function FacultyGridSection() {
       const matchDept = deptFilter === 'all' || f.department === deptFilter;
       return matchSearch && matchTitle && matchDept;
     });
-  }, [search, titleFilter, deptFilter]);
+  }, [search, titleFilter, deptFilter, facultyList]);
 
   return (
     <section className="w-full py-12 md:py-16">

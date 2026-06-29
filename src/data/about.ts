@@ -27,7 +27,7 @@ export interface ILeader {
   id: string;
   name: string;
   title: string;
-  avatarUrl: string;
+  imageUrl: string;
   bio: string;
 }
 
@@ -110,21 +110,21 @@ const LEADERS_ZH: ILeader[] = [
     id: '1',
     name: 'Taaha al Safar',
     title: '校长 / 教授',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
     bio: 'Taaha al Safar 教授，医学博士，博士生导师。拥有超过25年的医学教育与临床经验，曾在多所国际知名医学院校担任领导职务。主要研究方向为心血管疾病与公共卫生管理。'
   },
   {
     id: '2',
     name: "Mu'taz el Abdi",
     title: '副校长 / 教授',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Mu'taz el Abdi 教授，内科学专家，主管教学工作。在中东和中亚地区拥有丰富的临床教学经验，专注于心血管疾病的诊断与治疗研究。"
   },
   {
     id: '3',
     name: 'Saara al Faris',
     title: '副校长 / 教授',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Saara al Faris 教授，药剂学专家，主管科研与国际合作。在药物研发与临床药学领域有深厚造诣，推动学院与国际医药机构的深度合作。'
   }
 ];
@@ -156,7 +156,7 @@ const GALLERY_ZH: IGalleryItem[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: '校园全景',
     category: 'campus'
   },
@@ -252,21 +252,21 @@ const LEADERS_EN: ILeader[] = [
     id: '1',
     name: 'Taaha al Safar',
     title: 'Rector / Professor',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
     bio: 'Professor Taaha al Safar, MD, PhD supervisor. With over 25 years of medical education and clinical experience, he has held leadership positions at multiple internationally renowned medical schools. Research focus: cardiovascular diseases and public health management.'
   },
   {
     id: '2',
     name: "Mu'taz el Abdi",
     title: 'Vice Rector / Professor',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Professor Mu'taz el Abdi, internal medicine specialist, overseeing academic affairs. With extensive clinical teaching experience in the Middle East and Central Asia, focusing on cardiovascular disease diagnosis and treatment research."
   },
   {
     id: '3',
     name: 'Saara al Faris',
     title: 'Vice Rector / Professor',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Professor Saara al Faris, pharmaceutical sciences expert, overseeing research and international cooperation. With deep expertise in drug development and clinical pharmacy, driving deep partnerships with international pharmaceutical institutions.'
   }
 ];
@@ -298,7 +298,7 @@ const GALLERY_EN: IGalleryItem[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: 'Campus Panorama',
     category: 'campus'
   },
@@ -394,21 +394,21 @@ const LEADERS_KY: ILeader[] = [
     id: '1',
     name: 'Taaha al Safar',
     title: 'Ректор / Профессор',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
     bio: 'Профессор Тааха аль Сафар, медицина илимдору доктору, доктордук диссертация жетекчиси. 25 жылдан ашуун медицина билим берүү жана клиникалык тажрыйбасы бар.'
   },
   {
     id: '2',
     name: "Mu'taz el Abdi",
     title: 'Ректор орунбасары / Профессор',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Профессор Мутаз эл Абди, ички оорулар адисти, окутуу ишин жетектейт. Жүнүндүк Орто Азияда кең клиникалык окутуу тажрыйбасы бар."
   },
   {
     id: '3',
     name: 'Saara al Faris',
     title: 'Ректор орунбасары / Профессор',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Профессор Саара аль Фарис, фармацевтика адисти, илим-изилдөө жана эл аралык кызматташтырууну жетектейт.'
   }
 ];
@@ -440,7 +440,7 @@ const GALLERY_KY: IGalleryItem[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: 'Кампус панорамасы',
     category: 'campus'
   },
@@ -536,21 +536,21 @@ const LEADERS_RU: ILeader[] = [
     id: '1',
     name: 'Taaha al Safar',
     title: 'Ректор / Профессор',
-    avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
     bio: 'Профессор Тааха аль Сафар, доктор медицинских наук, руководитель докторских диссертаций. Более 25 лет опыта медицинского образования и клинической практики.'
   },
   {
     id: '2',
     name: "Mu'taz el Abdi",
     title: 'Проректор / Профессор',
-    avatarUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80',
     bio: "Профессор Мутаз эль Абди, специалист по внутренним болезням, курирует учебную работу. Большой опыт клинического преподавания на Ближнем Востоке и в Центральной Азии."
   },
   {
     id: '3',
     name: 'Saara al Faris',
     title: 'Проректор / Профессор',
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Профессор Саара аль Фарис, специалист по фармацевтическим наукам, курирует научную работу и международное сотрудничество.'
   }
 ];
@@ -582,7 +582,7 @@ const GALLERY_RU: IGalleryItem[] = [
   },
   {
     id: '5',
-    imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80',
     caption: 'Панорама кампуса',
     category: 'campus'
   },
