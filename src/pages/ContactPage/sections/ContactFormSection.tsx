@@ -1,6 +1,5 @@
 import { useState, type FormEvent } from 'react';
 import { toast } from 'sonner';
-import { scopedStorage } from '@lark-apaas/client-toolkit-lite';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -21,7 +20,7 @@ const STORAGE_KEY = '__cmsc_contact_messages';
 
 function loadMessages(): IContactMessage[] {
   try {
-    const raw = scopedStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return [];
     return JSON.parse(raw) as IContactMessage[];
   } catch {
@@ -30,7 +29,7 @@ function loadMessages(): IContactMessage[] {
 }
 
 function saveMessages(messages: IContactMessage[]) {
-  scopedStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
 }
 
 export default function ContactFormSection() {

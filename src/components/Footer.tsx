@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-import { UniversalLink } from '@lark-apaas/client-toolkit-lite';
 import { useTranslation } from '@/i18n/I18nContext';
 
 const QUICK_LINK_KEYS = [
@@ -92,15 +91,15 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {SOCIAL_LINKS.map((social) => (
                 <li key={social.label}>
-                  <UniversalLink
-                    to={social.href}
+                  <a
+                    href={social.href}
                     className="text-sm text-background/60 hover:text-background/90 transition-colors duration-200 inline-flex items-center gap-2"
                     target="_blank"
                     rel="noreferrer"
                   >
                     <span className="text-base">{social.icon}</span>
                     {social.label}
-                  </UniversalLink>
+                  </a>
                 </li>
               ))}
             </ul>

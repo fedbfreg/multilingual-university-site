@@ -4,7 +4,6 @@ import { Image } from '@/components/ui/image';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 import type { IFaculty } from '@/data/faculty';
-import { UniversalLink } from '@lark-apaas/client-toolkit-lite';
 import { useTranslation } from '@/i18n/I18nContext';
 
 interface FacultyInfoSectionProps {
@@ -59,12 +58,12 @@ export default memo(function FacultyInfoSection({ faculty }: FacultyInfoSectionP
             <div className="flex items-center gap-2 text-muted-foreground">
               <Mail className="size-4 shrink-0" />
               <span className="text-sm text-muted-foreground">{t('faculty.email')}: </span>
-              <UniversalLink
-                to={`mailto:${faculty.email}`}
+              <a
+                href={`mailto:${faculty.email}`}
                 className="text-sm text-primary hover:underline transition-colors"
               >
                 {faculty.email}
-              </UniversalLink>
+              </a>
             </div>
 
             {/* 简介 */}

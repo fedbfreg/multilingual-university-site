@@ -1,5 +1,4 @@
 import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react';
-import { scopedStorage } from '@lark-apaas/client-toolkit-lite';
 import { translations, DEFAULT_LANGUAGE, type Language, type TranslationKey } from './translations';
 
 const STORAGE_KEY = 'cmsc_language';
@@ -14,7 +13,7 @@ const I18nContext = createContext<I18nContextValue | null>(null);
 
 function getInitialLanguage(): Language {
   try {
-    const stored = scopedStorage.getItem(STORAGE_KEY);
+    const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === 'zh' || stored === 'ky' || stored === 'ru' || stored === 'en') {
       return stored;
     }
@@ -30,7 +29,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const setLanguage = useCallback((lang: Language) => {
     setLanguageState(lang);
     try {
-      scopedStorage.setItem(STORAGE_KEY, lang);
+      localStorage.setItem(STORAGE_KEY, lang);
     } catch {
       // ignore
     }
